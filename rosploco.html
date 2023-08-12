@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><!-- By Microsoft and EthanMcBloxxer under the MIT License (see the end of this document) -->
+<!DOCTYPE html><!-- By Microsoft and EthanMcBloxxer under the MIT License (see the end of this document) -->
 <html lang="en" style="width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;">
 
 <head><meta charset="utf-8" /><title></title></head>
@@ -4248,7 +4248,7 @@
 					{token: 'comment.todo', fontStyle: "bold"},
 				],
 				colors: {
-                    'editor.background': '#101111',
+                    'editor.background': '#0f1010',
                     'editor.selectionBackground': '#77666625',
 					'editor.foreground': '#cccccc',
 				}
@@ -4302,6 +4302,8 @@
 				});
 			}
 
+			addAction('monaco-help', "~ Help", function() {
+				document.location.href = "https://github.com/EthanMcBloxxer/Rosploco/";
 			}, [monaco.KeyMod.chord(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KEY_H)]);
 			addAction('save', "Save", function() {
 				saveTextAs(editor.getValue(), "script.lua");
